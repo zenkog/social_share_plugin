@@ -1,6 +1,6 @@
-# social_share_plugin
+# social_share_package
 
-[![Pub](https://img.shields.io/pub/v/social_share_plugin.svg?color=blue)](https://pub.dartlang.org/packages/social_share_plugin)
+[![Pub](https://img.shields.io/pub/v/social_share_package.svg?color=blue)](https://pub.dartlang.org/packages/social_share_package)
 
 Social Share to Facebook and Instagram Flutter plugin.
 
@@ -11,7 +11,7 @@ Also some minimal Android & iOS specific configuration must be done, otherise yo
 
 ### On your Flutter project
 
-See the [installation instructions on pub](https://pub.dartlang.org/packages/social_share_plugin#-installing-tab-).
+See the [installation instructions on pub](https://pub.dartlang.org/packages/social_share_package#-installing-tab-).
 
 ### Android
 
@@ -126,27 +126,27 @@ Done!
 
 ### Instagram
 ```dart
-import 'package:social_share_plugin/social_share_plugin.dart';
+import 'package:social_share_package/social_share_package.dart';
 
 File file = await ImagePicker.pickImage(source: ImageSource.gallery);
-await SocialSharePlugin.shareToFeedInstagram(path: file.path);
+await SocialSharePackage.shareToFeedInstagram(path: file.path);
 ```
 
 ### Facebook
 ```dart
-import 'package:social_share_plugin/social_share_plugin.dart';
+import 'package:social_share_package/social_share_package.dart';
 
 File file = await ImagePicker.pickImage(source: ImageSource.gallery);
-await SocialSharePlugin.shareToFeedFacebook(path: file.path);
+await SocialSharePackage.shareToFeedFacebook(path: file.path);
 
-await SocialSharePlugin.shareToFeedFacebookLink(quote: 'quote', url: 'https://flutter.dev');
+await SocialSharePackage.shareToFeedFacebookLink(quote: 'quote', url: 'https://flutter.dev');
 ```
 
 ### Twitter
 ```dart
-import 'package:social_share_plugin/social_share_plugin.dart';
+import 'package:social_share_package/social_share_package.dart';
 
-await SocialSharePlugin.shareToTwitterLink(text: 'text', url: 'https://flutter.dev');
+await SocialSharePackage.shareToTwitterLink(text: 'text', url: 'https://flutter.dev');
 ```
 
 That's it.
