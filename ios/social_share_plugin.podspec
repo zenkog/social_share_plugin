@@ -18,7 +18,6 @@ Social Share to Facebook and Intagram Flutter plugin.
 
   s.dependency 'FBSDKCoreKit', '~> 14.0'
   s.dependency 'FBSDKShareKit', '~> 14.0'
-
   s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice.
